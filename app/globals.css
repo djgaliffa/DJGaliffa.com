@@ -2,12 +2,13 @@
 
 :root {
   --black: #050505;
-  --ink: #0b0b0c;
-  --paper: #f1eee7;
-  --paper-soft: #d7d3ca;
-  --acid: #d8ff36;
-  --gold: #f4b926;
-  --red: #ff3f36;
+  --ink: #0c0c0d;
+  --paper: #f4f0e6;
+  --paper-soft: #d8d3c7;
+  --gold: #ffb612;
+  --gold-deep: #755000;
+  --steel: #a5acaf;
+  --gunmetal: #242628;
   --line: rgba(255, 255, 255, 0.18);
   --font-geist-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-geist-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
@@ -44,7 +45,7 @@ body::before {
 }
 
 ::selection {
-  background: var(--acid);
+  background: var(--gold);
   color: var(--black);
 }
 
@@ -64,7 +65,7 @@ a {
 }
 
 a:focus-visible {
-  outline: 3px solid var(--acid);
+  outline: 3px solid var(--gold);
   outline-offset: 4px;
 }
 
@@ -95,7 +96,7 @@ a:focus-visible {
 }
 
 .brand-kicker {
-  color: var(--acid);
+  color: var(--gold);
   font-size: 0.55em;
   letter-spacing: 0.04em;
 }
@@ -117,7 +118,7 @@ a:focus-visible {
 
 .site-nav a:hover,
 .social-links a:hover {
-  color: var(--acid);
+  color: var(--gold);
 }
 
 .header-cta {
@@ -202,11 +203,11 @@ a:focus-visible {
   width: 34px;
   height: 2px;
   content: "";
-  background: var(--acid);
+  background: var(--gold);
 }
 
 .eyebrow span {
-  color: var(--acid);
+  color: var(--gold);
 }
 
 .hero h1,
@@ -230,7 +231,7 @@ a:focus-visible {
 }
 
 .hero h1 em {
-  color: var(--acid);
+  color: var(--gold);
   font-style: normal;
 }
 
@@ -272,8 +273,8 @@ a:focus-visible {
 }
 
 .button--primary {
-  border-color: var(--acid);
-  background: var(--acid);
+  border-color: var(--gold);
+  background: var(--gold);
   color: var(--black);
 }
 
@@ -315,7 +316,7 @@ a:focus-visible {
 }
 
 .hero-rail strong {
-  color: var(--acid);
+  color: var(--gold);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: clamp(2.2rem, 3.5vw, 4.1rem);
   font-weight: 400;
@@ -335,7 +336,7 @@ a:focus-visible {
 .ticker {
   overflow: hidden;
   border-bottom: 1px solid #151515;
-  background: var(--acid);
+  background: var(--gold);
   color: var(--black);
 }
 
@@ -375,7 +376,7 @@ a:focus-visible {
 }
 
 .section-kicker {
-  color: var(--acid);
+  color: var(--gold);
 }
 
 .story {
@@ -390,7 +391,7 @@ a:focus-visible {
 }
 
 .story .section-kicker {
-  color: #7b8c00;
+  color: var(--gold-deep);
 }
 
 .story h2,
@@ -405,11 +406,11 @@ a:focus-visible {
 .steelers-copy h2 span,
 .press h2 span,
 .contact h2 span {
-  color: var(--acid);
+  color: var(--gold);
 }
 
 .story h2 span {
-  color: #8b9d00;
+  color: var(--gold-deep);
 }
 
 .story-columns {
@@ -502,7 +503,7 @@ a:focus-visible {
 }
 
 .quote-break blockquote span {
-  color: var(--acid);
+  color: var(--gold);
 }
 
 .formats {
@@ -569,7 +570,7 @@ a:focus-visible {
 }
 
 .format-card:hover {
-  background: var(--acid);
+  background: var(--gold);
   color: var(--black);
 }
 
@@ -579,7 +580,7 @@ a:focus-visible {
 }
 
 .format-card > span {
-  color: var(--acid);
+  color: var(--gold);
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.7rem;
   font-weight: 800;
@@ -619,7 +620,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(380px, 0.7fr);
   min-height: 760px;
-  background: var(--acid);
+  background: var(--gold);
   color: var(--black);
 }
 
@@ -689,7 +690,7 @@ a:focus-visible {
 }
 
 .career .section-kicker {
-  color: #7b8c00;
+  color: var(--gold-deep);
 }
 
 .section-heading--compact {
@@ -697,7 +698,7 @@ a:focus-visible {
 }
 
 .section-heading--compact h2 span {
-  color: #8b9d00;
+  color: var(--gold-deep);
 }
 
 .career-list {
@@ -717,7 +718,7 @@ a:focus-visible {
 }
 
 .career-list > li > strong {
-  color: #7b8c00;
+  color: var(--gold-deep);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: clamp(4rem, 8vw, 8rem);
   font-weight: 400;
@@ -789,32 +790,32 @@ a:focus-visible {
 
 .press {
   grid-template-columns: minmax(100px, 0.35fr) minmax(0, 0.7fr) minmax(330px, 0.95fr);
-  background: var(--red);
-  color: var(--black);
+  background: var(--gunmetal);
+  color: var(--paper);
 }
 
 .press .section-number {
-  color: rgba(0, 0, 0, 0.52);
+  color: rgba(255, 255, 255, 0.48);
 }
 
 .press .section-kicker {
-  color: var(--black);
+  color: var(--gold);
 }
 
 .press h2 span {
-  color: #fff;
+  color: var(--steel);
 }
 
 .press-copy > p:last-child {
   max-width: 590px;
   margin: 2rem 0 0;
-  color: rgba(0, 0, 0, 0.72);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.7;
 }
 
 .press-downloads {
   align-self: end;
-  border-top: 2px solid var(--black);
+  border-top: 2px solid var(--paper);
 }
 
 .press-downloads a {
@@ -823,7 +824,7 @@ a:focus-visible {
   justify-content: space-between;
   gap: 2rem;
   padding: 1.7rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.36);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
   transition: padding 180ms ease;
 }
 
