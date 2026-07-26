@@ -274,8 +274,8 @@ export default function Home() {
 
       <section className="steelers-feature">
         <img
-          src="/images/steelers-crew.jpg"
-          alt="DJ Galiffa with the Pittsburgh Steelers game-day entertainment crew"
+          src="/images/steelers-number-one.jpg"
+          alt="DJ Galiffa raising both arms in his number one Steelers jersey at Acrisure Stadium"
           loading="lazy"
         />
         <div className="steelers-copy">
@@ -297,6 +297,23 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <figure className="stadium-signature">
+        <img
+          src="/images/stadium-signature.jpg"
+          alt="DJ Galiffa raising both arms behind the decks in front of a packed crowd"
+          loading="lazy"
+        />
+        <figcaption>
+          <span>Game-day signature</span>
+          <strong>
+            68,000 voices.
+            <br />
+            <em>One pulse.</em>
+          </strong>
+          <small>DJ Galiffa · Acrisure Stadium</small>
+        </figcaption>
+      </figure>
 
       <section className="career section-shell">
         <div className="section-number">03 / LIVE RESUME</div>
