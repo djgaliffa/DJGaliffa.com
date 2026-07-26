@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | DJ Galiffa",
   },
   description:
-    "Official Pregame DJ for the Pittsburgh Steelers. DJ Galiffa is a stadium-proven open-format DJ and live entertainer available for national bookings.",
+    "DJ Galiffa combines elite open-format mixing, commanding microphone work, and high-energy crowd interaction in one unforgettable live show.",
   keywords: [
     "DJ Galiffa",
     "professional DJ",
@@ -31,23 +31,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "DJ Galiffa",
-    title: "DJ Galiffa | Built for the Big Stage",
+    title: "DJ Galiffa | Mix. Hype. Entertain.",
     description:
-      "Stadium-proven. Crowd-first. Available nationwide for nightclubs, arenas, brands, festivals, and high-profile events.",
+      "Elite mixing. Crowd hype. Full-show energy. The Official Pregame DJ for the Pittsburgh Steelers is available nationwide.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "DJ Galiffa - Built for the Big Stage",
+        alt: "DJ Galiffa - Mix. Hype. Entertain.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DJ Galiffa | Built for the Big Stage",
+    title: "DJ Galiffa | Mix. Hype. Entertain.",
     description:
-      "Official Pregame DJ for the Pittsburgh Steelers. Available nationwide.",
+      "Elite open-format mixing, fearless crowd interaction, and full-show energy—available nationwide.",
     images: ["/og.png"],
   },
 };

@@ -2,22 +2,22 @@ const bookingFormats = [
   {
     number: "01",
     title: "Nightclubs",
-    copy: "Open-format sets built to read the room, move fast, and keep the energy climbing.",
+    copy: "Fast, creative open-format mixing with a frontman’s command of the crowd—never hiding behind the booth.",
   },
   {
     number: "02",
     title: "Arenas + Sports",
-    copy: "Game-day timing, live-moment instincts, and the presence to connect with a stadium crowd.",
+    copy: "Stadium timing, fearless mic presence, and explosive crowd interaction built for the biggest live moments.",
   },
   {
     number: "03",
     title: "Brands + VIP",
-    copy: "A polished host and music director for launches, sponsor activations, and elevated guest experiences.",
+    copy: "A polished DJ, host, and entertainer for launches, sponsor activations, and elevated guest experiences.",
   },
   {
     number: "04",
     title: "Festivals + Touring",
-    copy: "A versatile, crowd-first performer ready for national stages, destination dates, and special appearances.",
+    copy: "A high-energy show that mixes, moves, and unites the crowd—ready for national stages and destination dates.",
   },
 ];
 
@@ -79,7 +79,7 @@ const jsonLd = {
   alternateName: "DJ Galiffa",
   url: "https://djgaliffa.com",
   image: "https://djgaliffa.com/images/portrait-red.jpg",
-  jobTitle: "Professional DJ and Live Entertainer",
+  jobTitle: "Open-Format DJ, MC and Live Entertainer",
   sameAs: [
     "https://www.facebook.com/DJGaliffa",
     "https://www.instagram.com/GaliffaProductions",
@@ -129,8 +129,9 @@ export default function Home() {
             the <em>big stage.</em>
           </h1>
           <p className="hero-deck">
-            High-impact open-format DJ. Live entertainer. Crowd catalyst.
-            Stadium-proven and ready for rooms across the country.
+            Elite open-format mixing. Fearless crowd interaction. Full-show
+            energy. DJ Galiffa leaves the booth, takes the mic, and turns every
+            set into a live experience.
           </p>
           <div className="hero-actions">
             <a className="button button--primary" href="#contact">
@@ -168,19 +169,21 @@ export default function Home() {
 
       <div className="ticker" aria-hidden="true">
         <div className="ticker-track">
-          <span>OPEN FORMAT</span>
+          <span>ELITE OPEN-FORMAT MIXING</span>
           <i>✦</i>
-          <span>STADIUM ENERGY</span>
+          <span>CROWD HYPE</span>
           <i>✦</i>
-          <span>NATIONAL BOOKINGS</span>
+          <span>LIVE SHOWMANSHIP</span>
           <i>✦</i>
-          <span>NIGHTCLUBS</span>
+          <span>OUT FROM BEHIND THE BOOTH</span>
           <i>✦</i>
-          <span>LIVE ENTERTAINMENT</span>
+          <span>ELITE OPEN-FORMAT MIXING</span>
           <i>✦</i>
-          <span>OPEN FORMAT</span>
+          <span>CROWD HYPE</span>
           <i>✦</i>
-          <span>STADIUM ENERGY</span>
+          <span>LIVE SHOWMANSHIP</span>
+          <i>✦</i>
+          <span>OUT FROM BEHIND THE BOOTH</span>
           <i>✦</i>
         </div>
       </div>
@@ -188,29 +191,31 @@ export default function Home() {
       <section className="story section-shell" id="story">
         <div className="section-number">01 / STORY</div>
         <div className="story-copy">
-          <p className="section-kicker">More than a DJ</p>
+          <p className="section-kicker">Mix. Hype. Entertain.</p>
           <h2>
-            He doesn&apos;t just play the room.
+            He doesn&apos;t hide behind the booth.
             <br />
-            <span>He becomes the moment.</span>
+            <span>He takes over the room.</span>
           </h2>
           <div className="story-columns">
             <p className="story-lead">
-              Derek Galiffa has spent a lifetime learning what makes a crowd
-              move—and how to turn that instinct into a show.
+              DJ Galiffa brings the rare top 1% skill set: elite mixing,
+              confident microphone work, and real crowd entertainment—all at
+              the same time.
             </p>
             <div>
               <p>
                 DJing since age 16, DJ Galiffa has built a full-time career on
-                versatility, presence, and unforgettable energy. He is an
-                open-format performer who can blend genres and decades without
-                losing the pulse of the room.
+                versatility, presence, and unforgettable energy. His
+                open-format sets blend genres and decades with precision while
+                keeping the room moving and the momentum climbing.
               </p>
               <p>
-                His signature is connection: stepping beyond the booth,
-                working the microphone, and meeting the crowd where they are.
-                From 68,000 fans at Acrisure Stadium to intimate VIP floors,
-                every set is shaped in real time.
+                Then he takes it beyond the mix. He steps out from behind the
+                booth, works the microphone, gets into the crowd, and turns the
+                dance floor into part of the show. From 68,000 fans at Acrisure
+                Stadium to intimate VIP rooms, he performs with the audience,
+                not at them.
               </p>
             </div>
           </div>
@@ -236,9 +241,9 @@ export default function Home() {
           className="quote-break-image"
         />
         <blockquote>
-          “The playlist is only the beginning.
+          “I don&apos;t just mix the music.
           <br />
-          <span>The job is to make people feel part of something.”</span>
+          <span>I get in the crowd and make the room erupt.”</span>
         </blockquote>
       </section>
 
@@ -252,8 +257,8 @@ export default function Home() {
             <span>Every scale.</span>
           </h2>
           <p>
-            DJ Galiffa brings the polish of a career professional and the live
-            instincts of a true entertainer.
+            The rare one-percent combination: elite mixing, commanding
+            microphone work, and natural crowd connection in one nonstop show.
           </p>
         </div>
         <div className="format-list">
@@ -282,8 +287,9 @@ export default function Home() {
           </h2>
           <p>
             As the Official Pregame DJ for the Pittsburgh Steelers, DJ Galiffa
-            sets the tone inside the bowl before every home game—reading the
-            moment, building anticipation, and energizing more than 68,000 fans.
+            does more than soundtrack the stadium. He reads the moment, takes
+            the mic, gets out from behind the booth, and energizes more than
+            68,000 fans before every home game.
           </p>
           <div className="steelers-stamp">
             <strong>OFFICIAL PREGAME DJ</strong>
@@ -318,11 +324,11 @@ export default function Home() {
       <section className="gallery section-shell" id="gallery">
         <div className="section-number">04 / GALLERY</div>
         <div className="section-heading section-heading--gallery">
-          <p className="section-kicker">In the booth. In the bowl.</p>
+          <p className="section-kicker">Behind the decks. Out in the crowd.</p>
           <h2>
-            Always in
+            Always putting on
             <br />
-            <span>the moment.</span>
+            <span>a show.</span>
           </h2>
         </div>
         <div className="gallery-grid">
@@ -382,11 +388,13 @@ export default function Home() {
         />
         <div className="contact-shade" />
         <div className="contact-copy">
-          <p className="section-kicker">Nightclubs · Arenas · Brands · VIP</p>
+          <p className="section-kicker">
+            Elite mixing · Crowd hype · Full-show energy
+          </p>
           <h2>
-            Let&apos;s make
+            Book the DJ.
             <br />
-            <span>the room move.</span>
+            <span>Bring the show.</span>
           </h2>
           <a
             className="contact-email"
