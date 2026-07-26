@@ -629,7 +629,7 @@ a:focus-visible {
   height: 100%;
   min-height: 680px;
   object-fit: cover;
-  object-position: 50% 28%;
+  object-position: 50% 15%;
   filter: saturate(0.9) contrast(1.05);
 }
 
@@ -1231,8 +1231,10 @@ footer p {
   }
 
   .steelers-feature > img {
-    min-height: 520px;
-    object-position: 50% 26%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 9 / 16;
+    object-position: center;
   }
 
   .steelers-copy {
