@@ -72,18 +72,69 @@ const career = [
   },
 ];
 
+const bookingEmail =
+  "mailto:info@galiffaproductions.com?subject=DJ%20Galiffa%20Booking%20Inquiry";
+
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Derek Galiffa",
-  alternateName: "DJ Galiffa",
-  url: "https://djgaliffa.com",
-  image: "https://djgaliffa.com/images/portrait-red.jpg",
-  jobTitle: "Open-Format DJ, MC and Live Entertainer",
-  sameAs: [
-    "https://www.facebook.com/DJGaliffa",
-    "https://www.instagram.com/GaliffaProductions",
-    "https://www.youtube.com/@GaliffaProductions",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://djgaliffa.com/#dj-galiffa",
+      name: "Derek Galiffa",
+      alternateName: "DJ Galiffa",
+      url: "https://djgaliffa.com",
+      image: "https://djgaliffa.com/images/portrait-red.jpg",
+      description:
+        "Professional open-format DJ, MC, live entertainer, and Official Pregame DJ for the Pittsburgh Steelers.",
+      jobTitle: "Open-Format DJ, MC and Live Entertainer",
+      email: "info@galiffaproductions.com",
+      telephone: "+1-724-554-0443",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Pittsburgh",
+        addressRegion: "PA",
+        addressCountry: "US",
+      },
+      sameAs: [
+        "https://www.facebook.com/DJGaliffa",
+        "https://www.instagram.com/GaliffaProductions",
+        "https://www.youtube.com/@GaliffaProductions",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://djgaliffa.com/#website",
+      url: "https://djgaliffa.com",
+      name: "DJ Galiffa",
+      description:
+        "Official website, live resume, press kit, and nationwide booking information for DJ Galiffa.",
+      inLanguage: "en-US",
+      publisher: {
+        "@id": "https://djgaliffa.com/#dj-galiffa",
+      },
+    },
+    {
+      "@type": "Service",
+      "@id": "https://djgaliffa.com/#booking",
+      name: "DJ Galiffa Live DJ Entertainment",
+      serviceType: [
+        "Nightclub DJ",
+        "Sports and arena DJ",
+        "Festival DJ",
+        "Brand and VIP event entertainment",
+      ],
+      description:
+        "Nationwide open-format DJ performances with live crowd interaction, microphone work, and full-show energy.",
+      provider: {
+        "@id": "https://djgaliffa.com/#dj-galiffa",
+      },
+      areaServed: {
+        "@type": "Country",
+        name: "United States",
+      },
+      url: "https://djgaliffa.com/#contact",
+    },
   ],
 };
 
@@ -101,13 +152,14 @@ export default function Home() {
           <span>GALIFFA</span>
         </a>
         <nav className="site-nav" aria-label="Primary navigation">
-          <a href="#story">Story</a>
-          <a href="#resume">Resume</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#press">Press</a>
+          <a href="#story">Why DJ Galiffa</a>
+          <a href="#resume">Booking Fit</a>
+          <a href="#gallery">Live Proof</a>
+          <a href="#press">Press Kit</a>
         </nav>
         <a className="header-cta" href="#contact">
-          Book DJ Galiffa
+          <span className="header-cta__desktop">Check Availability</span>
+          <span className="header-cta__mobile">Book Now</span>
         </a>
       </header>
 
@@ -272,6 +324,36 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="conversion-band" aria-labelledby="booking-cta-title">
+        <div>
+          <p className="section-kicker">Nationwide booking inquiries</p>
+          <h2 id="booking-cta-title">
+            Your next crowd
+            <br />
+            <span>deserves a show.</span>
+          </h2>
+        </div>
+        <div className="conversion-band__details">
+          <p>
+            Booking nightclubs, sports, festivals, brand activations, VIP
+            events, and high-profile appearances across the country.
+          </p>
+          <div className="conversion-band__actions">
+            <a className="button button--primary" href="#contact">
+              Check availability
+            </a>
+            <a
+              className="button button--dark"
+              href="/press/dj-galiffa-press-kit.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download press kit
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="steelers-feature">
         <img
           src="/images/steelers-number-one.jpg"
@@ -413,9 +495,13 @@ export default function Home() {
             <br />
             <span>Bring the show.</span>
           </h2>
+          <p className="contact-intro">
+            Tell us the date, city, venue, and audience size. National bookings
+            and high-profile opportunities are welcome.
+          </p>
           <a
             className="contact-email"
-            href="mailto:info@galiffaproductions.com?subject=DJ%20Galiffa%20Booking%20Inquiry"
+            href={bookingEmail}
           >
             info@galiffaproductions.com
           </a>

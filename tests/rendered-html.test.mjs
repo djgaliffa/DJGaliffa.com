@@ -15,9 +15,22 @@ test("server-renders the finished DJ Galiffa press site", async () => {
   assert.match(html, /Official Pregame DJ/);
   assert.match(html, /Pittsburgh Steelers/);
   assert.match(html, /Available nationwide/i);
+  assert.match(html, /Nationwide booking inquiries/i);
+  assert.match(html, /DJ Galiffa Live DJ Entertainment/);
   assert.match(html, /DJ Galiffa Press Kit/);
   assert.match(html, /info@galiffaproductions\.com/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
+});
+
+test("exports crawlable SEO routes", async () => {
+  const [robots, sitemap] = await Promise.all([
+    readFile(new URL("../out/robots.txt", import.meta.url), "utf8"),
+    readFile(new URL("../out/sitemap.xml", import.meta.url), "utf8"),
+  ]);
+
+  assert.match(robots, /Allow: \//);
+  assert.match(robots, /https:\/\/djgaliffa\.com\/sitemap\.xml/);
+  assert.match(sitemap, /<loc>https:\/\/djgaliffa\.com<\/loc>/);
 });
 
 test("starter preview files and metadata are removed", async () => {

@@ -3,12 +3,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://djgaliffa.com"),
+  applicationName: "DJ Galiffa",
+  category: "Entertainment",
   title: {
     default: "DJ Galiffa | Professional DJ & Live Entertainer",
     template: "%s | DJ Galiffa",
   },
   description:
-    "DJ Galiffa combines elite open-format mixing, commanding microphone work, and high-energy crowd interaction in one unforgettable live show.",
+    "Book DJ Galiffa, Official Pregame DJ for the Pittsburgh Steelers, for elite open-format mixing, live crowd entertainment, and nationwide events.",
+  authors: [{ name: "DJ Galiffa", url: "https://djgaliffa.com" }],
+  creator: "DJ Galiffa",
+  publisher: "DJ Galiffa",
   keywords: [
     "DJ Galiffa",
     "professional DJ",
@@ -16,10 +21,25 @@ export const metadata: Metadata = {
     "Pittsburgh Steelers DJ",
     "celebrity DJ",
     "nightclub DJ",
+    "arena DJ",
+    "festival DJ",
+    "corporate event DJ",
+    "sports DJ",
     "national DJ bookings",
   ],
   alternates: {
     canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
   icons: {
     icon: "/favicon.jpg",
@@ -33,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "DJ Galiffa",
     title: "DJ Galiffa | Mix. Hype. Entertain.",
     description:
-      "Elite mixing. Crowd hype. Full-show energy. The Official Pregame DJ for the Pittsburgh Steelers is available nationwide.",
+      "Official Pregame DJ for the Pittsburgh Steelers. Elite open-format mixing, crowd hype, and full-show energy—available nationwide.",
     images: [
       {
         url: "/og.png",
@@ -47,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DJ Galiffa | Mix. Hype. Entertain.",
     description:
-      "Elite open-format mixing, fearless crowd interaction, and full-show energy—available nationwide.",
+      "Official Steelers Pregame DJ. Elite open-format mixing, fearless crowd interaction, and full-show energy—available nationwide.",
     images: ["/og.png"],
   },
 };
