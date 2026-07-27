@@ -25,27 +25,32 @@ const gallery = [
   {
     src: "/images/hero-stadium.jpg",
     alt: "DJ Galiffa behind the decks at Acrisure Stadium during a Pittsburgh Steelers game",
-    className: "gallery-item gallery-item--wide",
+    width: 2400,
+    height: 1350,
   },
   {
     src: "/images/dancefloor.jpg",
     alt: "DJ Galiffa working the dance floor with a microphone during a black-tie event",
-    className: "gallery-item gallery-item--tall",
+    width: 1800,
+    height: 1198,
   },
   {
     src: "/images/crowd-selfie.jpg",
     alt: "DJ Galiffa in front of a packed crowd",
-    className: "gallery-item",
+    width: 1800,
+    height: 1013,
   },
   {
     src: "/images/booth-black-tie.jpg",
     alt: "DJ Galiffa performing in a tuxedo behind the DJ booth",
-    className: "gallery-item",
+    width: 1198,
+    height: 1800,
   },
   {
     src: "/images/celebration.jpg",
     alt: "DJ Galiffa performing alongside guests at a celebration",
-    className: "gallery-item gallery-item--wide",
+    width: 1600,
+    height: 1065,
   },
 ];
 
@@ -432,8 +437,22 @@ export default function Home() {
         </div>
         <div className="gallery-grid">
           {gallery.map((image) => (
-            <figure className={image.className} key={image.src}>
-              <img src={image.src} alt={image.alt} loading="lazy" />
+            <figure className="gallery-item" key={image.src}>
+              <a
+                href={image.src}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View full-size photo: ${image.alt}`}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  loading="lazy"
+                />
+                <span aria-hidden="true">View full image ↗</span>
+              </a>
             </figure>
           ))}
         </div>
