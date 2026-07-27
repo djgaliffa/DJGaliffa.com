@@ -641,6 +641,10 @@ a:focus-visible {
   padding: clamp(3rem, 6vw, 6rem);
 }
 
+.steelers-copy h2 {
+  font-size: clamp(3.9rem, 5.5vw, 6.5rem);
+}
+
 .steelers-copy .section-kicker {
   color: var(--black);
 }
@@ -1240,6 +1244,10 @@ footer p {
 
   .steelers-copy {
     padding: 5rem 1.1rem;
+  }
+
+  .steelers-copy h2 {
+    font-size: clamp(3.5rem, 15.5vw, 4.7rem);
   }
 
   .steelers-copy > p:not(.section-kicker) {
