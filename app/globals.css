@@ -97,8 +97,9 @@ a:focus-visible {
 
 .brand-kicker {
   color: var(--gold);
-  font-size: 0.55em;
-  letter-spacing: 0.04em;
+  font-size: 1em;
+  letter-spacing: -0.035em;
+  text-shadow: 0 0 18px rgba(255, 182, 18, 0.24);
 }
 
 .site-nav {
