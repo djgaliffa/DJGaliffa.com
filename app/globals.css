@@ -950,7 +950,7 @@ a:focus-visible {
 
 .contact > img {
   object-fit: cover;
-  object-position: 68% center;
+  object-position: 68% 22%;
   filter: saturate(0.4) contrast(1.05);
 }
 
